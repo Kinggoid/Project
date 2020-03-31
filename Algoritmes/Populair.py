@@ -5,7 +5,7 @@ c = psycopg2.connect("dbname=HUwebshop user=postgres password=Tomaat221")
 curs = c.cursor()
 
 
-def popuaanbied(cursor):
+def aanbied(cursor):
     with open('populair.csv', 'w', newline='') as csvout:
         fieldnames = ['productid', 'productnaam']
         writer = csv.DictWriter(csvout, fieldnames=fieldnames)
